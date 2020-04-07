@@ -1,0 +1,18 @@
+/*Suckerfish*/
+
+/*Layout*/
+.menu-suckerfish-horizontal{position:relative;z-index:999;}
+.menu-suckerfish-horizontal ul ul {width:209px;margin-top:-2px;border-top:1px solid #666;}
+ul.mainlevel-suckerfish-horizontal li li {position:relative;width:17.2em;margin:0;border-top:1px solid #525252;border-bottom:1px solid #3c3c3c;}
+ul.mainlevel-suckerfish-horizontal li {display:inline;position:relative;}
+ul.mainlevel-suckerfish-horizontal ul {display: none;position: absolute;display: none;position: absolute;top:4.1em;z-index:999;}
+ul.mainlevel-suckerfish-horizontal li:hover ul,ul.mainlevel-suckerfish-horizontal li.hover ul {display: block;}
+
+/*Style and customization*/
+ul.mainlevel-suckerfish-horizontal li li{background-color:#000;padding-left:7px;}
+a.mainlevel_current-suckerfish-horizontal, a.mainlevel_active-suckerfish-horizontal{background:url(http://drjudithguedalia.com/templates/drjudith-default/images/bg-menu.jpg) repeat-x;color:#000!important;}
+ul.mainlevel-suckerfish-horizontal li li a{text-transform:none!important;font-size:110%!important;color:#aeaeae!important;}
+ul.mainlevel-suckerfish-horizontal li li a.sublevel_current-suckerfish-horizontal,ul.mainlevel-suckerfish-horizontal li li a:hover{color:#fff!important;}
+ul.mainlevel-suckerfish-horizontal li:hover, ul.mainlevel-suckerfish-horizontal li.hover{color:#fff!important;}
+ul.mainlevel-suckerfish-horizontal li li:hover, ul.mainlevel-suckerfish-horizontal li li a:hover{background-image:none!important;}
+ul.mainlevel-suckerfish-horizontal li li, ul.mainlevel-suckerfish-horizontal li li a{background-image:none!important;background-color:#4a4a4a;}

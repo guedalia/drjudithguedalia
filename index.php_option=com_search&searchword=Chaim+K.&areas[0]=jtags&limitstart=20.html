@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="joomla, Joomla" />
+  <meta name="description" content="Joomla! - the dynamic portal engine and content management system" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Search</title>
+  <link href="templates/drjudith-default/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/silverlight.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/wmvplayer.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/swfobject.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/avreloaded.js"></script>
+
+<link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="templates/drjudith-default/css/template.css" type="text/css" />
+
+
+	<!--[if lte IE 7]>
+	  <style type="text/css">
+		.button, .button-login{padding:0 4px;}
+
+	  </style>
+	<![endif]-->
+	<!--[if lte IE 6]>
+	  <style type="text/css">
+
+	  </style>
+	<![endif]-->
+</head>
+<body>
+<div id="title">
+	<h1>Dr Judith Guedalia</h1>
+</div>
+	<div id="wrapper">
+		<div id="banner">
+		<object type="application/x-shockwave-flash" data="images/anim_sub.swf" width="748" height="97">
+				<param name="movie" value="images/anim_sub.swf" /><param name="bgcolor" value="#000000" />
+				<img src="images/noflash.jpg" width="748" height="97" alt="banner" />
+				</object>
+		</div>
+		<div id="topmenu">
+			<ul id="mainlevel"><li><a href="index.php_option=com_content&amp;view=frontpage&amp;Itemid=1.html" class="mainlevel" >Home</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=34&amp;Itemid=54.html" class="mainlevel" >Published Essays</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=36&amp;Itemid=55.html" class="mainlevel" >Peer Review Articles</a></li><li><a href="index.php_option=com_content&amp;view=article&amp;id=46&amp;Itemid=53.html" class="mainlevel" >Neuropsychology</a></li><li><a href="index.php_option=com_dfcontact&amp;Itemid=56.html" class="mainlevel" >Contact</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=37&amp;Itemid=58.html" class="mainlevel" >Hebrew עברית</a></li></ul>
+		</div>
+		<div class="clr"></div>
+		<div id="main">
+						<div id="right-wide">
+				<div id="mainbody-mid">
+					<div id="mainbody-top">
+						
+<div class="componentheading">
+	Search</div>
+
+
+<form id="searchForm" action="http://drjudithguedalia.com/index.php?option=com_search" method="post" name="searchForm">
+	<table class="contentpaneopen">
+		<tr>
+			<td nowrap="nowrap">
+				<label for="search_searchword">
+					Search Keyword:
+				</label>
+			</td>
+			<td nowrap="nowrap">
+				<input type="text" name="searchword" id="search_searchword" size="30" maxlength="20" value="chaim" class="inputbox" />
+			</td>
+			<td width="100%" nowrap="nowrap">
+				<button name="Search" onClick="this.form.submit()" class="button">Search</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				
+	<input type="radio" name="searchphrase" id="searchphraseall" value="all" checked="checked"  />
+	<label for="searchphraseall">All words</label>
+	<input type="radio" name="searchphrase" id="searchphraseany" value="any"  />
+	<label for="searchphraseany">Any words</label>
+	<input type="radio" name="searchphrase" id="searchphraseexact" value="exact"  />
+	<label for="searchphraseexact">Exact Phrase</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label for="ordering">
+					Ordering:
+				</label>
+				<select name="ordering" id="ordering" class="inputbox"><option value="newest"  selected="selected">Newest First</option><option value="oldest" >Oldest First</option><option value="popular" >Most Popular</option><option value="alpha" >Alphabetical</option><option value="category" >Section/Category</option></select>			</td>
+		</tr>
+	</table>
+			Search Only:
+				<input type="checkbox" name="areas[]" value="jtags" id="area_jtags" checked="checked" />
+			<label for="area_jtags">
+				Tags			</label>
+				<input type="checkbox" name="areas[]" value="content" id="area_content"  />
+			<label for="area_content">
+				Articles			</label>
+			
+
+	<table class="searchintro">
+	<tr>
+		<td colspan="3" >
+			<br />
+			Search Keyword <b>chaim</b>		</td>
+	</tr>
+	<tr>
+		<td>
+			<br />
+			Total: 27 results found.		</td>
+	</tr>
+</table>
+
+<br />
+<div align="center">
+	<div style="float: right;">
+		<label for="limit">
+			Display #		</label>
+		<select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()"><option value="5" >5</option><option value="10" >10</option><option value="15" >15</option><option value="20"  selected="selected">20</option><option value="25" >25</option><option value="30" >30</option><option value="50" >50</option><option value="100" >100</option><option value="0" >All</option></select>	</div>
+	<div>
+		Page 2 of 2	</div>
+</div>
+
+<input type="hidden" name="task"   value="search" />
+</form>
+
+<table class="contentpaneopen">
+	<tr>
+		<td>
+					<fieldset>
+				<div>
+					<span class="small">
+						21. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=115.html">
+						A Kuna Matata - Don't Worry, Be Happy vs. Gam Zu L'Tova							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Hakuna Matata,Quadriplegic,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.  There we were less than a week before Tisha B'Av, the most cataclysmic day in our history. The Two Tablets lay broken as a result of loss of faith by the newly freed&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						22. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=113.html">
+						'Chaim B'Seret' - 'Living In A Movie' (Part I)							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Quadriplegic,Cerebral Spine Injured,Singles Scene,CSI,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2008  Almost immediately on entering my office, <span class="highlight">Chaim</span> K. begins with the title and says:   "You might ask why I thought of this title.  I have thought about this and&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						23. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=112.html">
+						'Chaim B'Seret' - 'Living In A Movie' (Part II)							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Singlehood)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2008  The unsaid words in <span class="highlight">Chaim</span>'s 'bubble' are still hanging about the room; it is heavy with hope, expectations tinged with deep, deep sadness, fear against fear&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						24. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=108.html">
+						Soaring In Our Minds To Heights When Stuck On Earth							</a>
+													<br />
+							<span class="small">
+								(Matching tags: DSM,Bipolar Disorder,Chaim K.,Episodes Of Mania,Classic Bipolar Disorder,Episodes Of Depression,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia © 2008 with <span class="highlight">Chaim</span> K. To be honest, almost all of the cases or people I see cause my brain to take flight and "soar" to points unknown.  This statement may seem like I have finally&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						25. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=87.html">
+						The Gift Which Was Too Expensive							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Gifts,Hope,Metuna,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.  It has been a month and a half since the last time we met.  Holidays and other constraints have gotten ‘in the way'.  One example is the ‘gift that was too expensive'. &nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						26. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=75.html">
+						I understand you....							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Paralysis,Spinal Cord Injury,SCI,Jewish Press,Chaim K.,Spina Bifida,C1 - C 2 Injury,Polio)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2006  People who see me in my wheelchair, and bother to come over, say ‘oh, we understand you'.  My brother, my sister and my mother say they understand me. No one understands&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						27. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=62.html">
+						Dumb Things That People Say							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Sensitivities,Chaim K.,Jewish Press,Sensibilities)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.   Words are very powerful indeed.  So much so that mute -- unable to speak (Merriam-Webster Online Dictionary) is in the vernacular, ‘Dumb'.  In Judaism we may hear&nbsp;...				</div>
+							</fieldset>
+				</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<div align="center">
+				&lt;&lt; <a title="Start" href="index.php_option=com_search&amp;searchword=Chaim+K.&amp;areas[0]=jtags.html" class="pagenav">Start</a> &lt; <a title="Prev" href="index.php_option=com_search&amp;searchword=Chaim+K.&amp;areas[0]=jtags.html" class="pagenav">Prev</a> <a title="1" href="index.php_option=com_search&amp;searchword=Chaim+K.&amp;areas[0]=jtags.html" class="pagenav">1</a> <span class="pagenav">2</span> <span class="pagenav">Next</span> &gt; <span class="pagenav">End</span> &gt;&gt;			</div>
+		</td>
+	</tr>
+</table>
+					</div>
+				</div>
+				<div id="mainbody-bot"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div id="footer">
+		<div id="inner-footer">
+			<div id="logo">
+				<a href="index.php.html"><img src="templates/drjudith-default/images/logo.jpg" width="55" height="71" alt="logo"></img></a>
+			</div>
+			<div id="links">
+				
+			</div>
+			<div id="copyright">
+				Copyright 2008 Dr. Judith S.B. Guedalia. All rights reserved.
+			</div>
+		</div>
+	</div>
+</body>
+</html>

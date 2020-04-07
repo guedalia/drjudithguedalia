@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="joomla, Joomla" />
+  <meta name="description" content="Joomla! - the dynamic portal engine and content management system" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Search</title>
+  <link href="templates/drjudith-default/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/silverlight.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/wmvplayer.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/swfobject.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/avreloaded.js"></script>
+
+<link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="templates/drjudith-default/css/template.css" type="text/css" />
+
+
+	<!--[if lte IE 7]>
+	  <style type="text/css">
+		.button, .button-login{padding:0 4px;}
+
+	  </style>
+	<![endif]-->
+	<!--[if lte IE 6]>
+	  <style type="text/css">
+
+	  </style>
+	<![endif]-->
+</head>
+<body>
+<div id="title">
+	<h1>Dr Judith Guedalia</h1>
+</div>
+	<div id="wrapper">
+		<div id="banner">
+		<object type="application/x-shockwave-flash" data="images/anim_sub.swf" width="748" height="97">
+				<param name="movie" value="images/anim_sub.swf" /><param name="bgcolor" value="#000000" />
+				<img src="images/noflash.jpg" width="748" height="97" alt="banner" />
+				</object>
+		</div>
+		<div id="topmenu">
+			<ul id="mainlevel"><li><a href="index.php_option=com_content&amp;view=frontpage&amp;Itemid=1.html" class="mainlevel" >Home</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=34&amp;Itemid=54.html" class="mainlevel" >Published Essays</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=36&amp;Itemid=55.html" class="mainlevel" >Peer Review Articles</a></li><li><a href="index.php_option=com_content&amp;view=article&amp;id=46&amp;Itemid=53.html" class="mainlevel" >Neuropsychology</a></li><li><a href="index.php_option=com_dfcontact&amp;Itemid=56.html" class="mainlevel" >Contact</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=37&amp;Itemid=58.html" class="mainlevel" >Hebrew עברית</a></li></ul>
+		</div>
+		<div class="clr"></div>
+		<div id="main">
+						<div id="right-wide">
+				<div id="mainbody-mid">
+					<div id="mainbody-top">
+						
+<div class="componentheading">
+	Search</div>
+
+
+<form id="searchForm" action="http://drjudithguedalia.com/index.php?option=com_search" method="post" name="searchForm">
+	<table class="contentpaneopen">
+		<tr>
+			<td nowrap="nowrap">
+				<label for="search_searchword">
+					Search Keyword:
+				</label>
+			</td>
+			<td nowrap="nowrap">
+				<input type="text" name="searchword" id="search_searchword" size="30" maxlength="20" value="jewish press" class="inputbox" />
+			</td>
+			<td width="100%" nowrap="nowrap">
+				<button name="Search" onClick="this.form.submit()" class="button">Search</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				
+	<input type="radio" name="searchphrase" id="searchphraseall" value="all" checked="checked"  />
+	<label for="searchphraseall">All words</label>
+	<input type="radio" name="searchphrase" id="searchphraseany" value="any"  />
+	<label for="searchphraseany">Any words</label>
+	<input type="radio" name="searchphrase" id="searchphraseexact" value="exact"  />
+	<label for="searchphraseexact">Exact Phrase</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label for="ordering">
+					Ordering:
+				</label>
+				<select name="ordering" id="ordering" class="inputbox"><option value="newest"  selected="selected">Newest First</option><option value="oldest" >Oldest First</option><option value="popular" >Most Popular</option><option value="alpha" >Alphabetical</option><option value="category" >Section/Category</option></select>			</td>
+		</tr>
+	</table>
+			Search Only:
+				<input type="checkbox" name="areas[]" value="jtags" id="area_jtags" checked="checked" />
+			<label for="area_jtags">
+				Tags			</label>
+				<input type="checkbox" name="areas[]" value="content" id="area_content"  />
+			<label for="area_content">
+				Articles			</label>
+			
+
+	<table class="searchintro">
+	<tr>
+		<td colspan="3" >
+			<br />
+			Search Keyword <b>jewish press</b>		</td>
+	</tr>
+	<tr>
+		<td>
+			<br />
+			Total: 50 results found.		</td>
+	</tr>
+</table>
+
+<br />
+<div align="center">
+	<div style="float: right;">
+		<label for="limit">
+			Display #		</label>
+		<select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()"><option value="5" >5</option><option value="10" >10</option><option value="15" >15</option><option value="20"  selected="selected">20</option><option value="25" >25</option><option value="30" >30</option><option value="50" >50</option><option value="100" >100</option><option value="0" >All</option></select>	</div>
+	<div>
+		Page 1 of 3	</div>
+</div>
+
+<input type="hidden" name="task"   value="search" />
+</form>
+
+<table class="contentpaneopen">
+	<tr>
+		<td>
+					<fieldset>
+				<div>
+					<span class="small">
+						1. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=193.html">
+						Nursing a Grudge							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Attachment,Nefesh Israel,Nefesh International,Jewish Press)
+							</span>
+															</div>
+				<div>
+					Nefesh International is now celebrating its bar mitzvah.  Begun, 13 years ago in someone's living room, its 13th annual conference will be held December 31st-January 3rd, 2010, at The Hyatt Regency Long&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						2. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=192.html">
+						The Case of the Soldier Who Couldn't Whisper							</a>
+													<br />
+							<span class="small">
+								(Matching tags: WNL,Jewish Press,Lochesh,Whisper,Dystonia,Within-Normal-Limits,Neuropsycholog,Aphoniay,Psychosis)
+							</span>
+															</div>
+				<div>
+					They were afraid, afraid for him and afraid for themselves.  He, let's call him Lochesh (the Hebrew word for whisper) could not whisper.  When they are out on dangerous missions, their faces painted in&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						3. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=191.html">
+						Setting Sail on the Sea of Life							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Torah)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia and Chaim K.© 2009     Chaim K. rolls into the office with a very focused look this week.  After close to three and a half years of almost weekly sessions we "read" each other quite&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						4. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=190.html">
+						When Pigs Fly - Something Out of the Ordinary: Chaim K.'s Perspective on Days of Awe and the Swine Flu 							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Swine Flu)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K.            The Days of Awe are upon us, a time of introspection and renewal. Time reviewed and time projected. When Chaim K. came into my office during the month of&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						5. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=189.html">
+						Depression And Help From Our Friends Shaul, King David, Iyov and others...							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jenny S.,Jewish Press,Vertigo,Talking Therapy,Patience has Limits,Depressed Depression,Braille)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia  and Jenny S.  Overheard:  &nbsp;  ·         "I'm so de<span class="highlight">press</span>ed I gained five pounds over the last holiday!"  ·         "The economic situation struck so hard, I'm down to cleaning&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						6. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=188.html">
+						On Community Service: Kohanim And Cities Of Refuge							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Kohanim,Leviim,Jewish Press,Community Services)
+							</span>
+															</div>
+				<div>
+					On a recent Shabbat my grandson commented on how quickly I walked "considering " - for the sake of his present and future birthday gifts from me, I felt sure he was referring to my height-challenged state;&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						7. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=187.html">
+						The Higher The Expectation The Bigger The Fall							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Spinal Cord Injured,SCI,Expectations,Chaim K.,Disappointment)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia and Chaim K. Chaim K. comes into the office and immediately begins to speak, as if our last meeting had never ended. "Eight years ago, at age 14, I was hit by a car and left a quadriplegic&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						8. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=186.html">
+						Od Avinu Chai - Revisiting Germany							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Home,Germany)
+							</span>
+															</div>
+				<div>
+					"Germany," she shouted, as if I could have heard her here in Jerusalem through the open window. "The line is awful tonight, I thought I heard you say you are going to Germany."  I told her that she had&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						9. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=185.html">
+						A Visit To &quot;Angels On The Moon&quot;							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Life,Chaim K.,Dreams)
+							</span>
+															</div>
+				<div>
+					 		   	      	By: Dr. Judith Guedalia and Chaim K "Do you dream, that the world will know your name  So tell me your name  Do you care, about all the little things or anything at all?  I wanna feel, all&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						10. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=184.html">
+						Erev Taanit Esther 2009 - The Eighth 'Yahrzeit': Don't Judge Anyone							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Benefit of Doubt)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K. © 2009  Chaim comes rolling into the office, and no sooner has he parked his motorized wheelchair he says: "Hevei Dan Et Kol Adam LeKaf Zechut - in the vernacular, 'give&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						11. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=183.html">
+						Crowning Glory; The Gift - Not Just Learning About Chesed, But Doing It							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Crowning Glory,Jewish Press,Hair)
+							</span>
+															</div>
+				<div>
+					I looked at her thinking of my grandmother, who used to refer to one's hair (especially girls') as "your crowning glory."   There she stood before me, all of 14 years old, hair shorn in a kind of choppy&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						12. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=181.html">
+						Liar, Liar Pants On Fire: Curiosity About 'Made-off' (Madoff) Or, What Can Lying Be?							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Madoff,Jewish Press,Pseudologia Fantastica)
+							</span>
+															</div>
+				<div>
+					I don't presume to be a criminal psychological profiler - however, the  Made-off Case has piqued my curiosity. This creep (a word I usually  only use for sexual predators) has stolen money from the mouths&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						13. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=174.html">
+						Hang In There: Larvae, Pupae Metamorphose and Do Become Functioning Adults							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Off The Derech,Jewish Press,At Risk)
+							</span>
+															</div>
+				<div>
+					"Metamorphosis is a biological process by which an animal physically develops after birth or hatching, involving a conspicuous and relatively abrupt change in the animal's form or structure through cell&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						14. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=171.html">
+						We 'Get' Pachad Yitzchak, But What about Avraham?							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Gordian Knot,Epileptic Seizures)
+							</span>
+															</div>
+				<div>
+					    When my kids were younger I used to say, "My sons keep me in stitches," meaning of course, that they were great fun and also frequently needed to get "sewn-up" after their various exploits.  One particularly&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						15. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=170.html">
+						Pyramid Of Needs And Then Some...							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Change,Jewish Press,Hierarchy Of Needs,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K. © 2008  We have many needs.  Sitting with Chaim K. as an annoying fly buzzes around, a need that is not on Maslow's iconic pyramid comes to mind.  The specific need&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						16. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=169.html">
+						Sometimes The Diagnosis Is As Clear As The Nose On Your Face...							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Counter-Transferrential,Transferrential,Jewish Press,Violated)
+							</span>
+															</div>
+				<div>
+					She came into the office with her mother. They sat down. The mother, facing me on an angle, her back towards her daughter; the daughter, on the other, hand was facing me, but her shoulder was defensively&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						17. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=168.html">
+						On Siblings, Jealousy And The Normal One							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Caliban Syndrome,Jewish Press,Chaim K.,Sibling Rivalry)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K.  "When I was healthy and my brothers were young and bothered me," said an exasperated and frustrated Chaim K., as we began another session, "I'd shout at them or even&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						18. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=167.html">
+						But I Just Drank Two Piña-Coladas A Week!							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Fetal Alcohol Syndrome,Fetal Alcohol Effects,White Matter Disorder,FAE,Jewish Press,Non-verbal Learning Disorder,FAS)
+							</span>
+															</div>
+				<div>
+					Over the past ten years, the shelves of wine in my makolet (local minimart) and the regular supermarket have spread. Gone are the days where sweet red, syrupy Kiddush wine was all you could buy. (In Israel,&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						19. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=166.html">
+						Partnering With Hashem To Heal The Sick							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Bikur Cholim)
+							</span>
+															</div>
+				<div>
+					 The Madrich HaCharedi, a veritable goldmine, is the Yellow Pages of goods and services of the ultra-religious community here in Israel. One gets just a taste of the chesed (mercy, love, or compassion)&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						20. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=165.html">
+						Is It Better To Have Loved And Lost Than To Never Have Loved At All?							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Love,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K.  I hold it true, whate'er befall; I feel it,           when I sorrow most;  Tis better to have loved and lost,  Than never to have loved, at all.     From Alfred Lord&nbsp;...				</div>
+							</fieldset>
+				</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<div align="center">
+				&lt;&lt; <span class="pagenav">Start</span> &lt; <span class="pagenav">Prev</span> <span class="pagenav">1</span> <a title="2" href="index.php_option=com_search&amp;searchword=Jewish+Press&amp;areas[0]=jtags&amp;limitstart=20.html" class="pagenav">2</a> <a title="3" href="index.php_option=com_search&amp;searchword=Jewish+Press&amp;areas[0]=jtags&amp;limitstart=40.html" class="pagenav">3</a> <a title="Next" href="index.php_option=com_search&amp;searchword=Jewish+Press&amp;areas[0]=jtags&amp;limitstart=20.html" class="pagenav">Next</a> &gt; <a title="End" href="index.php_option=com_search&amp;searchword=Jewish+Press&amp;areas[0]=jtags&amp;limitstart=40.html" class="pagenav">End</a> &gt;&gt;			</div>
+		</td>
+	</tr>
+</table>
+					</div>
+				</div>
+				<div id="mainbody-bot"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div id="footer">
+		<div id="inner-footer">
+			<div id="logo">
+				<a href="index.php.html"><img src="templates/drjudith-default/images/logo.jpg" width="55" height="71" alt="logo"></img></a>
+			</div>
+			<div id="links">
+				
+			</div>
+			<div id="copyright">
+				Copyright 2008 Dr. Judith S.B. Guedalia. All rights reserved.
+			</div>
+		</div>
+	</div>
+</body>
+</html>

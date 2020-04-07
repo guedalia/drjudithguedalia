@@ -1,0 +1,25 @@
+/*Styling*/
+table .contentpaneopen{width:100%;}
+.contentheading{background:url(http://drjudithguedalia.com/templates/drjudith-default/images/bg-contentheading.png) 0 4px no-repeat;}
+li{list-style-image: url(http://drjudithguedalia.com/templates/drjudith-default/images/bullet.gif);}
+a{color:#fff}
+.contentpaneopen fieldset{margin-bottom:17px;}
+#mainbody-mid li{list-style-image:url(../images/arrow.gif);}
+
+
+/*Topmenu*/
+#topmenu ul{margin:0 auto;width:780px;position:relative;top:5px;}
+#topmenu a{font:normal 100%/1.3em arial,verdana;color:#fff;}
+#topmenu li{float:left;list-style:none;}
+#topmenu li li{padding:0;}
+#topmenu li a{text-decoration:none;height:22px;padding-top:14px;display:block;width:124px;text-align:center;margin-right:6px;background:url(../images/bg-button-off.jpg) 100% 0 no-repeat;}
+#topmenu li a#active_menu.mainlevel{background:url(../images/bg-button-on.jpg) 100% 0 no-repeat;}
+
+/*Left menu*/
+.article_separator_left{background:url(http://drjudithguedalia.com/templates/drjudith-default/images/dots.png) repeat-x;width:100%!important;height:2px;margin-top:13px;}
+
+
+/*Footer*/
+#footer{background:url(../images/bg-footer.jpg) repeat-x;padding-top:10px;width:100%!important;}
+#links h3{font:normal 100%/1em arial,verdana;color:#fff;margin:3px;padding:0;width:100px;font-style:italic;}
+#links{padding-top:8px!important;}

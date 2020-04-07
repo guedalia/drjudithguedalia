@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="joomla, Joomla" />
+  <meta name="description" content="Joomla! - the dynamic portal engine and content management system" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Search</title>
+  <link href="templates/drjudith-default/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/silverlight.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/wmvplayer.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/swfobject.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/avreloaded.js"></script>
+
+<link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="templates/drjudith-default/css/template.css" type="text/css" />
+
+
+	<!--[if lte IE 7]>
+	  <style type="text/css">
+		.button, .button-login{padding:0 4px;}
+
+	  </style>
+	<![endif]-->
+	<!--[if lte IE 6]>
+	  <style type="text/css">
+
+	  </style>
+	<![endif]-->
+</head>
+<body>
+<div id="title">
+	<h1>Dr Judith Guedalia</h1>
+</div>
+	<div id="wrapper">
+		<div id="banner">
+		<object type="application/x-shockwave-flash" data="images/anim_sub.swf" width="748" height="97">
+				<param name="movie" value="images/anim_sub.swf" /><param name="bgcolor" value="#000000" />
+				<img src="images/noflash.jpg" width="748" height="97" alt="banner" />
+				</object>
+		</div>
+		<div id="topmenu">
+			<ul id="mainlevel"><li><a href="index.php_option=com_content&amp;view=frontpage&amp;Itemid=1.html" class="mainlevel" >Home</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=34&amp;Itemid=54.html" class="mainlevel" >Published Essays</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=36&amp;Itemid=55.html" class="mainlevel" >Peer Review Articles</a></li><li><a href="index.php_option=com_content&amp;view=article&amp;id=46&amp;Itemid=53.html" class="mainlevel" >Neuropsychology</a></li><li><a href="index.php_option=com_dfcontact&amp;Itemid=56.html" class="mainlevel" >Contact</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=37&amp;Itemid=58.html" class="mainlevel" >Hebrew עברית</a></li></ul>
+		</div>
+		<div class="clr"></div>
+		<div id="main">
+						<div id="right-wide">
+				<div id="mainbody-mid">
+					<div id="mainbody-top">
+						
+<div class="componentheading">
+	Search</div>
+
+
+<form id="searchForm" action="http://drjudithguedalia.com/index.php?option=com_search" method="post" name="searchForm">
+	<table class="contentpaneopen">
+		<tr>
+			<td nowrap="nowrap">
+				<label for="search_searchword">
+					Search Keyword:
+				</label>
+			</td>
+			<td nowrap="nowrap">
+				<input type="text" name="searchword" id="search_searchword" size="30" maxlength="20" value="CSI" class="inputbox" />
+			</td>
+			<td width="100%" nowrap="nowrap">
+				<button name="Search" onClick="this.form.submit()" class="button">Search</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				
+	<input type="radio" name="searchphrase" id="searchphraseall" value="all" checked="checked"  />
+	<label for="searchphraseall">All words</label>
+	<input type="radio" name="searchphrase" id="searchphraseany" value="any"  />
+	<label for="searchphraseany">Any words</label>
+	<input type="radio" name="searchphrase" id="searchphraseexact" value="exact"  />
+	<label for="searchphraseexact">Exact Phrase</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label for="ordering">
+					Ordering:
+				</label>
+				<select name="ordering" id="ordering" class="inputbox"><option value="newest"  selected="selected">Newest First</option><option value="oldest" >Oldest First</option><option value="popular" >Most Popular</option><option value="alpha" >Alphabetical</option><option value="category" >Section/Category</option></select>			</td>
+		</tr>
+	</table>
+			Search Only:
+				<input type="checkbox" name="areas[]" value="jtags" id="area_jtags" checked="checked" />
+			<label for="area_jtags">
+				Tags			</label>
+				<input type="checkbox" name="areas[]" value="content" id="area_content"  />
+			<label for="area_content">
+				Articles			</label>
+			
+
+	<table class="searchintro">
+	<tr>
+		<td colspan="3" >
+			<br />
+			Search Keyword <b>CSI</b>		</td>
+	</tr>
+	<tr>
+		<td>
+			<br />
+			Total: 2 results found.		</td>
+	</tr>
+</table>
+
+<br />
+<div align="center">
+	<div style="float: right;">
+		<label for="limit">
+			Display #		</label>
+		<select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()"><option value="5" >5</option><option value="10" >10</option><option value="15" >15</option><option value="20"  selected="selected">20</option><option value="25" >25</option><option value="30" >30</option><option value="50" >50</option><option value="100" >100</option><option value="0" >All</option></select>	</div>
+	<div>
+			</div>
+</div>
+
+<input type="hidden" name="task"   value="search" />
+</form>
+
+<table class="contentpaneopen">
+	<tr>
+		<td>
+					<fieldset>
+				<div>
+					<span class="small">
+						1. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=120.html">
+						Anger vs. Midot: States And Traits From Chaim K.'s Perspective							</a>
+													<br />
+							<span class="small">
+								(Matching tags: CSI,Firgun,Jewish Press,Anger,Regression,Cervical Spine Injured,Quadriplegic,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K.  © 2008  Over the Hagim I met many Americans who − once introduced to me − said something like the following:     How is Chaim K.?     				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						2. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=113.html">
+						'Chaim B'Seret' - 'Living In A Movie' (Part I)							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Quadriplegic,Cerebral Spine Injured,Singles Scene,CSI,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Chaim K. © 2008  Almost immediately on entering my office, Chaim K. begins with the title and says:   "You might ask why I thought of this title.  I have thought about this and&nbsp;...				</div>
+							</fieldset>
+				</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<div align="center">
+							</div>
+		</td>
+	</tr>
+</table>
+					</div>
+				</div>
+				<div id="mainbody-bot"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div id="footer">
+		<div id="inner-footer">
+			<div id="logo">
+				<a href="index.php.html"><img src="templates/drjudith-default/images/logo.jpg" width="55" height="71" alt="logo"></img></a>
+			</div>
+			<div id="links">
+				
+			</div>
+			<div id="copyright">
+				Copyright 2008 Dr. Judith S.B. Guedalia. All rights reserved.
+			</div>
+		</div>
+	</div>
+</body>
+</html>

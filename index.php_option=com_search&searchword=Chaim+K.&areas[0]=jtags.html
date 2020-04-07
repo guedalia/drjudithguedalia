@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="joomla, Joomla" />
+  <meta name="description" content="Joomla! - the dynamic portal engine and content management system" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Search</title>
+  <link href="templates/drjudith-default/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/silverlight.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/wmvplayer.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/swfobject.js"></script>
+  <script type="text/javascript" src="plugins/content/avreloaded/avreloaded.js"></script>
+
+<link rel="stylesheet" href="templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="templates/drjudith-default/css/template.css" type="text/css" />
+
+
+	<!--[if lte IE 7]>
+	  <style type="text/css">
+		.button, .button-login{padding:0 4px;}
+
+	  </style>
+	<![endif]-->
+	<!--[if lte IE 6]>
+	  <style type="text/css">
+
+	  </style>
+	<![endif]-->
+</head>
+<body>
+<div id="title">
+	<h1>Dr Judith Guedalia</h1>
+</div>
+	<div id="wrapper">
+		<div id="banner">
+		<object type="application/x-shockwave-flash" data="images/anim_sub.swf" width="748" height="97">
+				<param name="movie" value="images/anim_sub.swf" /><param name="bgcolor" value="#000000" />
+				<img src="images/noflash.jpg" width="748" height="97" alt="banner" />
+				</object>
+		</div>
+		<div id="topmenu">
+			<ul id="mainlevel"><li><a href="index.php_option=com_content&amp;view=frontpage&amp;Itemid=1.html" class="mainlevel" >Home</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=34&amp;Itemid=54.html" class="mainlevel" >Published Essays</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=36&amp;Itemid=55.html" class="mainlevel" >Peer Review Articles</a></li><li><a href="index.php_option=com_content&amp;view=article&amp;id=46&amp;Itemid=53.html" class="mainlevel" >Neuropsychology</a></li><li><a href="index.php_option=com_dfcontact&amp;Itemid=56.html" class="mainlevel" >Contact</a></li><li><a href="index.php_option=com_content&amp;view=category&amp;layout=blog&amp;id=37&amp;Itemid=58.html" class="mainlevel" >Hebrew עברית</a></li></ul>
+		</div>
+		<div class="clr"></div>
+		<div id="main">
+						<div id="right-wide">
+				<div id="mainbody-mid">
+					<div id="mainbody-top">
+						
+<div class="componentheading">
+	Search</div>
+
+
+<form id="searchForm" action="http://drjudithguedalia.com/index.php?option=com_search" method="post" name="searchForm">
+	<table class="contentpaneopen">
+		<tr>
+			<td nowrap="nowrap">
+				<label for="search_searchword">
+					Search Keyword:
+				</label>
+			</td>
+			<td nowrap="nowrap">
+				<input type="text" name="searchword" id="search_searchword" size="30" maxlength="20" value="chaim" class="inputbox" />
+			</td>
+			<td width="100%" nowrap="nowrap">
+				<button name="Search" onClick="this.form.submit()" class="button">Search</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				
+	<input type="radio" name="searchphrase" id="searchphraseall" value="all" checked="checked"  />
+	<label for="searchphraseall">All words</label>
+	<input type="radio" name="searchphrase" id="searchphraseany" value="any"  />
+	<label for="searchphraseany">Any words</label>
+	<input type="radio" name="searchphrase" id="searchphraseexact" value="exact"  />
+	<label for="searchphraseexact">Exact Phrase</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label for="ordering">
+					Ordering:
+				</label>
+				<select name="ordering" id="ordering" class="inputbox"><option value="newest"  selected="selected">Newest First</option><option value="oldest" >Oldest First</option><option value="popular" >Most Popular</option><option value="alpha" >Alphabetical</option><option value="category" >Section/Category</option></select>			</td>
+		</tr>
+	</table>
+			Search Only:
+				<input type="checkbox" name="areas[]" value="jtags" id="area_jtags" checked="checked" />
+			<label for="area_jtags">
+				Tags			</label>
+				<input type="checkbox" name="areas[]" value="content" id="area_content"  />
+			<label for="area_content">
+				Articles			</label>
+			
+
+	<table class="searchintro">
+	<tr>
+		<td colspan="3" >
+			<br />
+			Search Keyword <b>chaim</b>		</td>
+	</tr>
+	<tr>
+		<td>
+			<br />
+			Total: 27 results found.		</td>
+	</tr>
+</table>
+
+<br />
+<div align="center">
+	<div style="float: right;">
+		<label for="limit">
+			Display #		</label>
+		<select name="limit" id="limit" class="inputbox" size="1" onchange="this.form.submit()"><option value="5" >5</option><option value="10" >10</option><option value="15" >15</option><option value="20"  selected="selected">20</option><option value="25" >25</option><option value="30" >30</option><option value="50" >50</option><option value="100" >100</option><option value="0" >All</option></select>	</div>
+	<div>
+		Page 1 of 2	</div>
+</div>
+
+<input type="hidden" name="task"   value="search" />
+</form>
+
+<table class="contentpaneopen">
+	<tr>
+		<td>
+					<fieldset>
+				<div>
+					<span class="small">
+						1. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=191.html">
+						Setting Sail on the Sea of Life							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Torah)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.© 2009     <span class="highlight">Chaim</span> K. rolls into the office with a very focused look this week.  After close to three and a half years of almost weekly sessions we "read" each other quite&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						2. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=190.html">
+						When Pigs Fly - Something Out of the Ordinary: Chaim K.'s Perspective on Days of Awe and the Swine Flu 							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Swine Flu)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.            The Days of Awe are upon us, a time of introspection and renewal. Time reviewed and time projected. When <span class="highlight">Chaim</span> K. came into my office during the month of&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						3. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=187.html">
+						The Higher The Expectation The Bigger The Fall							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Spinal Cord Injured,SCI,Expectations,Chaim K.,Disappointment)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. <span class="highlight">Chaim</span> K. comes into the office and immediately begins to speak, as if our last meeting had never ended. "Eight years ago, at age 14, I was hit by a car and left a quadriplegic&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						4. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=185.html">
+						A Visit To &quot;Angels On The Moon&quot;							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Life,Chaim K.,Dreams)
+							</span>
+															</div>
+				<div>
+					 		   	      	By: Dr. Judith Guedalia and <span class="highlight">Chaim</span> K "Do you dream, that the world will know your name  So tell me your name  Do you care, about all the little things or anything at all?  I wanna feel, all&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						5. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=184.html">
+						Erev Taanit Esther 2009 - The Eighth 'Yahrzeit': Don't Judge Anyone							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,Benefit of Doubt)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2009  <span class="highlight">Chaim</span> comes rolling into the office, and no sooner has he parked his motorized wheelchair he says: "Hevei Dan Et Kol Adam LeKaf Zechut - in the vernacular, 'give&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						6. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=170.html">
+						Pyramid Of Needs And Then Some...							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Change,Jewish Press,Hierarchy Of Needs,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2008  We have many needs.  Sitting with <span class="highlight">Chaim</span> K. as an annoying fly buzzes around, a need that is not on Maslow's iconic pyramid comes to mind.  The specific need&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						7. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=168.html">
+						On Siblings, Jealousy And The Normal One							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Caliban Syndrome,Jewish Press,Chaim K.,Sibling Rivalry)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.  "When I was healthy and my brothers were young and bothered me," said an exasperated and frustrated <span class="highlight">Chaim</span> K., as we began another session, "I'd shout at them or even&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						8. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=165.html">
+						Is It Better To Have Loved And Lost Than To Never Have Loved At All?							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Love,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.  I hold it true, whate'er befall; I feel it,           when I sorrow most;  Tis better to have loved and lost,  Than never to have loved, at all.     From Alfred Lord&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						9. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=158.html">
+						'High Man' On The Totem Pole							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,Chaim K.,The Totem-Pole Effect,Mass Casualty Events,MCEs)
+							</span>
+															</div>
+				<div>
+					 	 	 	 		 	      	Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.* The meanings of the designs on totem poles are as varied as the cultures that produce them. Totem poles may recount familiar legends, clan lineages or&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						10. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=151.html">
+						Giving A 'Loan' From The Bank Hanafshi (Emotional Bank)							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Giving,Chaim K.,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.           When he was wheeled into my office for our weekly appointment, I noticed a change. He seemed to be bursting with something that I couldn't place. No sooner&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						11. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=146.html">
+						Seeing Life as It Can Be - Not Accepting Life As It Is!							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Neuroplasticity,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.              "When I first came to Dr. Guedalia, about a year ago, I believed/thought that my life was over, because I am paralyzed; because I can't do anything; because&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						12. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=143.html">
+						 'Two' Is Better Than 'One', And The Cord Of Three Strands...							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Group Therapy,Jewish Press,Mimi N.,Jenny S.)
+							</span>
+															</div>
+				<div>
+					 By Dr. Judith Guedalia, <span class="highlight">Chaim</span> K., Jenny S. and Mimi N.  © 2007          I was nervous. This was going to be my first "group" in a very long time. How would I segue to a foursome from a "sicha b'arba eynaim"&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						13. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=136.html">
+						'Capped And Then Handi-capped'							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Capped,Handi-capped,Handicapped,Jewish Press,Chaim K.)
+							</span>
+															</div>
+				<div>
+					Co-written by <span class="highlight">Chaim</span> K. and Dr. Judith Guedalia © 2007  (Written last Purim)          Kail Maleh Rachamim, He Who lives in the uppermost levels of the heavens             So begins the prayer for those&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						14. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=135.html">
+						Jealousy, Cupidity/Desire And Honor/Dignity Put A Man Out Of The World (Pirkei Avot/Sayings Of The Fathers': 4:21)							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Positive Envy,Chaim K.,Jealousy,Jewish Press)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2007          "Last night I went to a good friend's wedding, yet again; my friends seem to be dropping-out of bachelorhood like flies," smiles <span class="highlight">Chaim</span> K. aged 20, through&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						15. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=131.html">
+						Counting-Up Our Days And Hopes For The Future							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Blue Funk,Jewish Press,Music,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and Mr. <span class="highlight">Chaim</span> K.           One of the hardest things to do is the "count-up." Start at a point of extreme, almost ineffable sadness and pain, and start counting the seconds, minutes&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						16. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=130.html">
+						Living And Learning From The Sayings Of Our Fathers							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Counter-Transference,Jewish Press,Chaim K.,Transference)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2007          Hillel says: "Do not separate from the community. And do not trust yourself until the day of your death. And don't judge your friend until you are in&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						17. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=125.html">
+						A Purim L'Chaim, BS&quot;D With G-d's Intervention							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Jewish Press,BS&quot;D,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K. © 2008  (This column was written several weeks before Purim.)     "When a person wakes up in the morning, opens his eyes and he's alive, he might think that this is&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						18. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=123.html">
+						Sounds Of Silence: Chaim K. And His Old Friend Darkness							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Fast of Silence,Sounds of Silence,Jewish Press)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia © 2008 and <span class="highlight">Chaim</span> K. Hello darkness, my old friend; I've come to talk with you again  Because a vision softly creeping, left its seeds while I was sleeping  And the vision that was planted&nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						19. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=120.html">
+						Anger vs. Midot: States And Traits From Chaim K.'s Perspective							</a>
+													<br />
+							<span class="small">
+								(Matching tags: CSI,Firgun,Jewish Press,Anger,Regression,Cervical Spine Injured,Quadriplegic,Chaim K.)
+							</span>
+															</div>
+				<div>
+					By Dr. Judith Guedalia and <span class="highlight">Chaim</span> K.  © 2008  Over the Hagim I met many Americans who − once introduced to me − said something like the following:     How is <span class="highlight">Chaim</span> K.?     &nbsp;...				</div>
+							</fieldset>
+					<fieldset>
+				<div>
+					<span class="small">
+						20. 					</span>
+												<a href="index.php_option=com_content&amp;view=article&amp;id=119.html">
+						'Off-The-Derech' From Off-To-The-Side: A Different Perspective							</a>
+													<br />
+							<span class="small">
+								(Matching tags: Chaim K.,Jewish Press,Off The Derech)
+							</span>
+															</div>
+				<div>
+					Dr. Judith Guedalia © 2008 and Mr. <span class="highlight">Chaim</span> K. "Don't make me into some kind of "Hacham b'Leila." Literally this means a wise-man-of-the-night, figuratively, advice by happenstance, or someone whose input&nbsp;...				</div>
+							</fieldset>
+				</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<div align="center">
+				&lt;&lt; <span class="pagenav">Start</span> &lt; <span class="pagenav">Prev</span> <span class="pagenav">1</span> <a title="2" href="index.php_option=com_search&amp;searchword=Chaim+K.&amp;areas[0]=jtags&amp;limitstart=20.html" class="pagenav">2</a> <a title="Next" href="index.php_option=com_search&amp;searchword=Chaim+K.&amp;areas[0]=jtags&amp;limitstart=20.html" class="pagenav">Next</a> &gt; <a title="End" href="index.php_option=com_search&amp;searchword=Chaim+K.&amp;areas[0]=jtags&amp;limitstart=20.html" class="pagenav">End</a> &gt;&gt;			</div>
+		</td>
+	</tr>
+</table>
+					</div>
+				</div>
+				<div id="mainbody-bot"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div id="footer">
+		<div id="inner-footer">
+			<div id="logo">
+				<a href="index.php.html"><img src="templates/drjudith-default/images/logo.jpg" width="55" height="71" alt="logo"></img></a>
+			</div>
+			<div id="links">
+				
+			</div>
+			<div id="copyright">
+				Copyright 2008 Dr. Judith S.B. Guedalia. All rights reserved.
+			</div>
+		</div>
+	</div>
+</body>
+</html>
