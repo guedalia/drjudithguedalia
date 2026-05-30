@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Monthly columns originally published in The Jewish Press (2007–2015)">
+<title>Jewish Press Columns · Dr. Judith S.B. Guedalia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="Dr. Judith S.B. Guedalia — Essays &amp; Articles" href="/feed.xml">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a href="/" class="site-title">Dr. Judith S.B. <span class="lname">Guedalia</span><span class="credentials">PhD</span></a>
+    <nav class="primary"><a href="/">Home</a><a href="/articles/published/">Essays</a><a href="/articles/peer-review-articles/">Peer-Review</a><a href="/articles/hebrew/">Hebrew עברית</a><a href="/articles/jewish-press/" class="active">Jewish Press</a><a href="/media.html">Media</a><a href="/practice.html">Practice</a><a href="/tags.html">Topics</a><a href="/book.html">The Book</a><a href="/bio.html">Bio</a><a href="/cv.html">CV</a><a href="/search.html">Search</a></nav>
+  </div>
+</header>
+<main>
+
+<div class="container">
+  <h1>Jewish Press Columns</h1>
+  <p class="subtitle">Monthly columns originally published in The Jewish Press (2007–2015)</p>
+  <div class="year-bar"><a href="#" data-year="" class="active">All (5)</a> <a href="#" data-year="2015">2015</a> <a href="#" data-year="2014">2014</a> <a href="#" data-year="2013">2013</a> <a href="#" data-year="2012">2012</a></div>
+  <ul class="article-list" id="article-list">
+<li data-year="2015">
+  <a class="title" href="/article/9104-odysseus-and-jonah-help-during-a-fateful-journey.html">Odysseus And Jonah Help During A Fateful Journey</a>
+  <div class="ex">Confirms: Stage IV B Uterine cancer diagnosed ~2010 (5 years before September 2015); seventh open-belly incision including four caesarian sections; was 'over…</div>
+  <div class="row-meta"><time>2015-09-18</time> &middot; </div>
+</li>
+<li data-year="2015">
+  <a class="title" href="/article/9103-this-is-no-laughing-matter-but-we-are-in-chodesh-av.html">This Is No Laughing Matter (But We Are In Chodesh Av)</a>
+  <div class="ex">Confirms endometrial cancer diagnosis and surgical complications.</div>
+  <div class="row-meta"><time>2015-08-03</time> &middot; </div>
+</li>
+<li data-year="2014">
+  <a class="title" href="/article/9102-communication-disorders-or-what-happened-to-just-talking.html">Communication Disorders Or What Happened To 'Just' Talking?</a>
+  <div class="ex">Mentions 'lived in Israel for the past thirty years' → confirms Israel from ~1984. References cheder rebbe terminology.</div>
+  <div class="row-meta"><time>2014-07-18</time> &middot; </div>
+</li>
+<li data-year="2013">
+  <a class="title" href="/article/9105-the-mourning-of-hope-seeking-to-accommodate-light-in-darkness.html">The Mourning Of Hope: Seeking to Accommodate Light in Darkness</a>
+  <div class="ex">Co-authored with 'Chaim K.' (pseudonym per book's editorial note).</div>
+  <div class="row-meta"><time>2013-12-26</time> &middot; </div>
+</li>
+<li data-year="2012">
+  <a class="title" href="/article/9101-sukkot-the-gps-and-mindbody-interventions.html">Sukkot, The GPS And Mind/Body Interventions</a>
+  <div class="ex">References PET scan and 'serious case of cancer'. Mentions GPS introduced 1973 / civilian use 1980s.</div>
+  <div class="row-meta"><time>2012-09-27</time> &middot; </div>
+</li></ul>
+</div>
+<script>
+(function(){
+  var bar = document.querySelector('.year-bar');
+  if (!bar) return;
+  bar.addEventListener('click', function(e){
+    if (e.target.tagName !== 'A') return;
+    e.preventDefault();
+    bar.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+    e.target.classList.add('active');
+    var year = e.target.dataset.year;
+    document.querySelectorAll('#article-list li').forEach(li => {
+      li.style.display = (!year || li.dataset.year === year) ? '' : 'none';
+    });
+  });
+})();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div>1945 – 2018 · <em>חיה שרה ציפורה</em> · <a href="/bio.html">about</a> · <a href="/search.html">search</a></div>
+  <div class="credit">A digital archive of essays, peer-reviewed articles, and Jewish-studies writings of Dr. Judith Sandra Bendheim Guedalia z"l, Director of the Neuropsychology Unit at Shaare Zedek Medical Center, Jerusalem (1990–2018).</div>
+</footer>
+</body>
+</html>
