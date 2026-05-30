@@ -39,20 +39,29 @@ body {
 .site-title { font-family: 'Playfair Display', 'Garamond', serif; font-size: 22px; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: -0.01em; }
 .site-title .lname { color: var(--accent); }
 .site-title .credentials { color: var(--muted); font-style: italic; font-size: 14px; font-weight: 400; margin-left: 6px; }
-nav.primary { display: flex; gap: 22px; align-items: center; font-size: 15px; }
+nav.primary { display: flex; gap: 18px; align-items: center; font-size: 15px; flex-wrap: wrap; }
 nav.primary a { color: var(--ink); text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 1px; transition: border-color 0.15s; }
 nav.primary a:hover, nav.primary a.active { border-color: var(--accent); color: var(--accent); }
 @media (max-width: 760px) {
   .site-header .inner { flex-direction: column; gap: 8px; align-items: flex-start; }
-  nav.primary { width: 100%; overflow-x: auto; padding-bottom: 4px; }
+  nav.primary { width: 100%; row-gap: 8px; column-gap: 14px; font-size: 14px; }
   nav.primary a { white-space: nowrap; }
 }
+[dir="rtl"] nav.primary { justify-content: flex-end; }
 .container { max-width: 760px; margin: 0 auto; padding: 36px 24px 80px; }
 .container.wide { max-width: 1080px; }
-h1, h2, h3, h4 { font-family: 'Playfair Display', 'Garamond', serif; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', 'Garamond', serif; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; overflow-wrap: break-word; word-wrap: break-word; }
 h1 { font-size: 34px; margin: 0 0 8px; color: var(--ink); }
 h2 { font-size: 24px; margin: 36px 0 12px; color: var(--accent); border-bottom: 1px solid var(--rule); padding-bottom: 8px; }
 h3 { font-size: 18px; margin: 24px 0 8px; color: var(--ink); }
+@media (max-width: 600px) {
+  .container { padding: 20px 16px 60px; }
+  h1 { font-size: 24px; line-height: 1.2; }
+  h2 { font-size: 19px; margin: 26px 0 10px; }
+  h3 { font-size: 16px; }
+  body { font-size: 17px; }
+  article.body p:first-of-type::first-letter { font-size: 2.6em; }
+}
 .subtitle { color: var(--muted); font-style: italic; font-size: 17px; margin-bottom: 22px; }
 a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--rule); transition: border-color 0.15s; }
 a:hover { border-color: var(--accent); }
@@ -67,7 +76,12 @@ a.tag:hover { background: var(--accent-light); color: var(--card); border-color:
 .muted { color: var(--muted); font-size: 0.9em; }
 .citation { background: var(--hl); border-left: 3px solid var(--accent); padding: 10px 16px; margin: 18px 0; font-size: 14.5px; color: #3a3530; font-style: italic; }
 .citation::before { content: "Citation: "; font-style: normal; font-weight: 600; color: var(--accent); }
+article.body { overflow-wrap: break-word; word-wrap: break-word; }
 article.body p { margin: 0 0 14px; }
+article.body img, article.body iframe, article.body video, article.body table { max-width: 100%; height: auto; }
+article.body table { border-collapse: collapse; display: block; overflow-x: auto; }
+article.body pre, article.body code { white-space: pre-wrap; word-wrap: break-word; }
+article.body a { overflow-wrap: anywhere; }
 article.body p:first-of-type::first-letter {
   font-family: 'Playfair Display', serif;
   font-size: 3.5em;
