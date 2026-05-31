@@ -31,11 +31,15 @@
     <button type="button" id="btn-en" class="lang-btn" data-target="article-en" aria-pressed="false">English (machine translation)</button>
   </div>
   <script>
-    (function(){
+    document.addEventListener('DOMContentLoaded', function(){
       const btnHe = document.getElementById('btn-he');
       const btnEn = document.getElementById('btn-en');
       const artHe = document.getElementById('article-he');
       const artEn = document.getElementById('article-en');
+      if (!btnHe || !btnEn || !artHe || !artEn) {
+        console.warn('lang-toggle: missing elements', {btnHe, btnEn, artHe, artEn});
+        return;
+      }
       function show(which){
         if (which==='en'){
           artHe.hidden = true; artEn.hidden = false;
@@ -48,10 +52,10 @@
         }
         try { history.replaceState(null,'', which==='en' ? '#en' : '#'); } catch(e){}
       }
-      btnHe.addEventListener('click', ()=>show('he'));
-      btnEn.addEventListener('click', ()=>show('en'));
+      btnHe.addEventListener('click', function(){ show('he'); });
+      btnEn.addEventListener('click', function(){ show('en'); });
       if (location.hash === '#en') show('en');
-    })();
+    });
   </script>
   <article class="body" lang="he" dir="rtl" id="article-he">
     
